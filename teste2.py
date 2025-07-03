@@ -1,3 +1,5 @@
+import math
+
 #Função que verifica se um número é primo
 def ehPrimo(num):
     if num <= 1:
@@ -12,6 +14,7 @@ print(ehPrimo(int(input("Digite um número: "))))
 #filtrar e somar pares
 numeros = [10, 15, 22, 33, 40, 7, 9]
 
+print(sorted(numeros))
 soma=0
 for i in numeros:
     if i%2==0:
@@ -37,6 +40,7 @@ for pessoa in pessoas:
 
 print(f"O aluno com a maior nota é {maior['nome']} ({maior['nota']})")
 
+
 #alunos = {
  #   "Danillo": 8.5,
  #   "Lucas": 7.0,
@@ -55,5 +59,10 @@ nota3 = (float(input("Digite a terceira nota: ")))
 media = (nota1 + nota2 + nota3)/3
 
 print(f"A média é {media:.2f}")
+
+print(type(media))
+
+print(math.sqrt(49))
+
 
 
